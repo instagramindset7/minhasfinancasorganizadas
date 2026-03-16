@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>
+  window.pixelId = "69b453de38de58077797d2ba";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precificação - empresaorganizada.com</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+  :root {
+    --green: #15F900;
+    --dark-green: #0a2010;
+    --white: #ffffff;
+    --gray: #666;
+    --red: #e53935;
+    --gold: #FFD700;
+    --text-dark: #111;
+    --text-mid: #333;
+  }
+  html{
+         scroll-behavior: smooth;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Poppins', sans-serif; color: var(--text-dark); line-height: 1.6; }
+
+  /* TOP BAR */
+  .top-bar { background: var(--green); text-align: center; padding: 7px 16px; font-size: 0.78rem; font-weight: 600; color: #0a1a0f; }
+  .top-bar a { color: #0a1a0f; font-weight: 800; }
+
+  /* HERO */
+  .hero { background: #fff; text-align: center; padding: 44px 20px 52px; }
+  .hero h1 { font-size: clamp(1.15rem, 2.8vw, 1.65rem); font-weight: 700; max-width: 560px; margin: 0 auto 12px; line-height: 1.35; }
+  .hero p { font-size: 0.88rem; color: var(--text-mid); max-width: 480px; margin: 0 auto 20px; }
+  .hero p b { color: var(--text-dark); }
+  .hero-mockup { width: 100%; max-width: 420px; border-radius: 10px; margin: 0 auto 22px; display: block; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+  .check-list { list-style: none; display: inline-block; text-align: left; margin-bottom: 22px; }
+  .check-list li { font-size: 0.84rem; padding: 4px 0; display: flex; align-items: center; gap: 8px; color: var(--text-mid); }
+  .check-list li::before { content: "✔"; color: var(--green); font-size: 1rem; font-weight: 700; }
+  .price-by { font-size: 0.83rem; color: var(--gray); margin-bottom: 2px; }
+  .price-hero { font-size: 2.8rem; font-weight: 900; line-height: 1; margin-bottom: 18px; }
+  .btn-hero { display: inline-block; background: var(--green); color: #0a1a0f; font-size: 1rem; font-weight: 800; padding: 14px 36px; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 18px rgba(21,249,0,0.35); transition: 0.2s; cursor: pointer; border: none; }
+  .btn-hero:hover { background: #0de000; transform: translateY(-2px); }
+  .trust-badges { display: flex; justify-content: center; gap: 22px; margin-top: 18px; flex-wrap: wrap; }
+  .trust-badge { display: flex; align-items: center; gap: 6px; font-size: 0.72rem; color: var(--gray); }
+
+  /* DARK */
+  .bg-dark { background: var(--dark-green); color: #fff; }
+  .bg-darker { background: #071208; color: #fff; }
+
+  /* TWO-COL DARK */
+  .section-two-col { padding: 60px 20px; }
+  .two-col-inner { max-width: 1020px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  @media(max-width:720px){ .two-col-inner { grid-template-columns: 1fr; gap: 32px; } }
+  .col-img { width: 100%; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+  .section-two-col h2 { font-size: clamp(1.05rem, 2.5vw, 1.45rem); font-weight: 700; margin-bottom: 14px; line-height: 1.3; }
+  .section-two-col h2 span { color: var(--green); }
+  .section-two-col p { font-size: 0.87rem; color: #b8d4c0; margin-bottom: 14px; font-weight: 300; }
+  .section-two-col h3 { font-size: 0.88rem; font-weight: 700; color: #fff; margin-bottom: 10px; }
+  .x-list { list-style: none; }
+  .x-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 0.84rem; color: #c8dcd0; padding: 5px 0; }
+  .ic-red { color: var(--red); flex-shrink: 0; margin-top: 2px; }
+  .ic-grn { color: var(--green); flex-shrink: 0; margin-top: 2px; }
+
+  /* G1 NEWS BOX */
+  .g1-box { background: #fff; border-radius: 10px; overflow: hidden; margin-bottom: 24px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+  .g1-header { background: #c00; padding: 8px 14px; display: flex; align-items: center; gap: 10px; }
+  .g1-logo { font-size: 1.4rem; font-weight: 900; color: #fff; font-style: italic; }
+  .g1-economia { color: #fff; font-size: 0.75rem; letter-spacing: 2px; font-weight: 600; }
+  .g1-subheader { background: #eee; text-align: center; padding: 4px; font-size: 0.7rem; color: #444; letter-spacing: 1px; font-weight: 600; }
+  .g1-body { padding: 16px; }
+  .g1-body h3 { font-size: 1.1rem; font-weight: 800; color: #111; margin-bottom: 10px; line-height: 1.3; }
+  .g1-body p { font-size: 0.8rem; color: #333; margin-bottom: 8px; }
+
+  /* COMO FUNCIONA (white) */
+  .section-como { background: #fff; padding: 60px 20px; text-align: center; }
+  .section-como h2 { font-size: clamp(1.1rem, 2.8vw, 1.5rem); font-weight: 800; margin-bottom: 8px; text-transform: uppercase; }
+  .section-como .sub { color: var(--gray); font-size: 0.88rem; margin-bottom: 48px; max-width: 540px; margin-left: auto; margin-right: auto; }
+  .section-como .sub b { color: var(--text-dark); }
+  .features-list { max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; }
+  .feature-row { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; padding: 40px 0; border-bottom: 1px solid #eee; text-align: left; }
+  .feature-row:last-child { border-bottom: none; }
+  @media(max-width:640px){ .feature-row { grid-template-columns: 1fr; gap: 20px; } }
+  .feature-img { width: 100%; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+  .feature-row h3 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; }
+  .feature-row p { font-size: 0.84rem; color: var(--gray); margin-bottom: 10px; }
+  .green-list { list-style: none; }
+  .green-list li { font-size: 0.82rem; color: var(--text-mid); padding: 4px 0; display: flex; align-items: flex-start; gap: 7px; }
+  .green-list li::before { content: "✔"; color: var(--green); font-size: 0.9rem; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+
+  /* PARA QUEM (dark) */
+  .section-paraquem { padding: 60px 20px; }
+  .section-paraquem .inner { max-width: 720px; margin: 0 auto; }
+  .section-paraquem h2 { font-size: clamp(1.05rem, 2.5vw, 1.4rem); font-weight: 800; text-align: center; margin-bottom: 28px; text-transform: uppercase; }
+  .paraquem-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 28px 32px; }
+  @media(max-width:480px){ .paraquem-box { padding: 20px 16px; } }
+  .paraquem-section { margin-bottom: 16px; }
+  .paraquem-section h4 { font-size: 0.88rem; font-weight: 700; color: var(--green); margin-bottom: 4px; }
+  .paraquem-section p { font-size: 0.81rem; color: #b8d4c0; }
+  .paraquem-note { margin-top: 20px; font-size: 0.84rem; color: #c8dcd0; font-style: italic; text-align: center; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+  /* PREMIUM */
+  .section-premium { padding: 60px 20px; }
+  .section-premium h2 { font-size: clamp(1.05rem, 2.5vw, 1.5rem); font-weight: 700; text-align: center; margin-bottom: 36px; }
+  .section-premium h2 span { color: var(--green); }
+  .premium-cards-grid { max-width: 980px; margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+  @media(max-width:860px){ .premium-cards-grid { grid-template-columns: repeat(2,1fr); } }
+  @media(max-width:500px){ .premium-cards-grid { grid-template-columns: 1fr; } }
+  .premium-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; overflow: hidden; }
+  .premium-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+  .premium-card-body { padding: 16px; }
+  .badge-pill { display: inline-block; font-size: 0.67rem; font-weight: 700; padding: 3px 10px; border-radius: 50px; margin-bottom: 8px; }
+  .badge-prem { background: rgba(21,249,0,0.15); color: var(--green); border: 1px solid var(--green); }
+  .badge-bon { background: rgba(255,215,0,0.15); color: var(--gold); border: 1px solid var(--gold); }
+  .premium-card h3 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: #fff; }
+  .premium-card ul { list-style: none; }
+  .premium-card ul li { font-size: 0.79rem; color: #b8d4c0; padding: 3px 0; display: flex; gap: 6px; }
+  .premium-card ul li::before { content: "✔"; color: var(--green); font-size: 0.79rem; flex-shrink: 0; }
+  .strike { color: #888; font-size: 0.8rem; text-decoration: line-through; }
+  .free { color: var(--gold); font-size: 0.84rem; font-weight: 700; }
+
+  /* GARANTIA */
+  .section-garantia { padding: 50px 20px; }
+  .garantia-inner { max-width: 780px; margin: 0 auto; display: grid; grid-template-columns: 150px 1fr; gap: 32px; align-items: center; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px; }
+  @media(max-width:560px){ .garantia-inner { grid-template-columns: 1fr; text-align: center; padding: 24px 20px; } }
+  .garantia-seal { width: 130px; margin: 0 auto; display: block; }
+  .section-garantia h2 { font-size: clamp(1rem, 2.5vw, 1.1rem); font-weight: 800; color: var(--green); margin-bottom: 10px; }
+  .section-garantia p { font-size: 0.87rem; color: #b8d4c0; }
+
+  /* DEPOIMENTOS */
+  .section-depoimentos { background: #fff; padding: 60px 20px; text-align: center; }
+  .section-depoimentos h2 { font-size: clamp(1.1rem, 2.8vw, 1.5rem); font-weight: 800; margin-bottom: 6px; text-transform: uppercase; }
+  .section-depoimentos .sub { font-size: 0.88rem; color: var(--gray); margin-bottom: 32px; }
+
+  /* CAROUSEL */
+  .carousel-container { max-width: 960px; margin: 0 auto 50px; position: relative; }
+  .carousel-track-wrapper { overflow: hidden; border-radius: 10px; }
+  .carousel-track { display: flex; transition: transform 0.45s cubic-bezier(0.4,0,0.2,1); }
+  .carousel-slide { min-width: 33.333%; padding: 0 8px; }
+  @media(max-width:720px){ .carousel-slide { min-width: 50%; } }
+  @media(max-width:480px){ .carousel-slide { min-width: 100%; } }
+  .carousel-slide img { width: 100%; border-radius: 10px; border: 1px solid #ddd; display: block; }
+
+  .carousel-btn {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: #fff; border: 2px solid #ddd; color: #333;
+    width: 42px; height: 42px; border-radius: 50%; cursor: pointer;
+    font-size: 1.1rem; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12); transition: 0.2s; z-index: 10;
+  }
+  .carousel-btn:hover { background: var(--green); border-color: var(--green); color: #0a1a0f; }
+  .carousel-btn.prev { left: -20px; }
+  .carousel-btn.next { right: -20px; }
+  @media(max-width:480px){ .carousel-btn.prev { left: 4px; } .carousel-btn.next { right: 4px; } }
+
+  .carousel-dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
+  .carousel-dot {
+    width: 10px; height: 10px; border-radius: 50%; background: #ddd;
+    cursor: pointer; transition: 0.2s; border: none;
+  }
+  .carousel-dot.active { background: var(--green); transform: scale(1.2); }
+
+  /* PLANOS */
+  .section-planos { background: #fff; padding: 20px 20px 60px; text-align: center; }
+  .section-planos h2 { font-size: clamp(0.95rem, 2.2vw, 1.25rem); font-weight: 700; margin-bottom: 4px; }
+  .sub-planos { font-size: 0.95rem; color: var(--gray); margin-bottom: 32px; }
+  .planos-wrapper { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+  @media(max-width:640px){ .planos-wrapper { grid-template-columns: 1fr; max-width: 480px; } }
+  .plano-card { border: 1px solid #ddd; border-radius: 14px; padding: 24px 20px; text-align: left; background: #fff; display: flex; flex-direction: column; }
+  .plano-card.premium { border-color: var(--red); box-shadow: 0 4px 24px rgba(229,57,53,0.12); }
+  .plano-title-tag { display: block; text-align: center; font-size: 0.84rem; font-weight: 700; padding: 8px; border-radius: 8px; margin-bottom: 16px; letter-spacing: 1px; background: #111; color: #fff; }
+  .plano-card.premium .plano-title-tag { background: var(--red); }
+  .most-sold { text-align: center; font-size: 0.74rem; font-weight: 700; color: #555; margin-bottom: 6px; }
+  .stars-row { color: var(--gold); font-size: 1rem; text-align: center; margin-bottom: 8px; }
+  .plano-img { width: 100%; border-radius: 8px; margin-bottom: 18px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+  .plano-features { list-style: none; margin-bottom: 18px; }
+  .plano-features li { font-size: 0.81rem; padding: 5px 0; display: flex; align-items: flex-start; gap: 7px; color: var(--text-mid); border-bottom: 1px solid #f0f0f0; }
+  .plano-features li:last-child { border-bottom: none; }
+  .pf-ok { color: var(--green); font-size: 0.88rem; flex-shrink: 0; margin-top: 2px; }
+  .pf-no { color: #ccc; font-size: 0.88rem; flex-shrink: 0; margin-top: 2px; }
+  .extras-label { font-size: 0.84rem; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; }
+  /* CTA block — always centered */
+  .plano-cta-block { display: flex; flex-direction: column; align-items: center; width: 100%; margin-top: auto; padding-top: 4px; }
+  .price-from { font-size: 0.79rem; color: #999; text-decoration: line-through; }
+  .price-for-label { font-size: 0.69rem; color: #999; text-transform: uppercase; letter-spacing: 1px; }
+  .price-main { font-size: 2.8rem; font-weight: 900; color: var(--green); line-height: 1; }
+  .price-basic { font-size: 2rem; font-weight: 900; line-height: 1; }
+  .price-period { font-size: 0.79rem; color: #999; margin-bottom: 16px; }
+  .btn-plano { display: block; width: 100%; text-align: center; font-size: 0.88rem; font-weight: 800; padding: 14px 20px; border-radius: 50px; text-decoration: none; margin-bottom: 8px; transition: 0.2s; cursor: pointer; border: none; font-family: 'Poppins',sans-serif; letter-spacing: 0.3px; }
+  .btn-basic { background: #111; color: #fff; }
+  .btn-basic:hover { background: #333; }
+  .btn-premium { background: var(--green); color: #0a1a0f; box-shadow: 0 4px 16px rgba(21,249,0,0.3); animation: pulse 2s infinite; }
+  .btn-premium:hover { background: #0de000; }
+  .btn-note { font-size: 0.74rem; color: #999; text-align: center; margin-bottom: 14px; }
+  .trust-row { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 8px; width: 100%; }
+  .trust-item { display: flex; align-items: center; gap: 4px; font-size: 0.69rem; color: #555; }
+
+  /* FAQ */
+  .section-faq { padding: 60px 20px; }
+  .section-faq h2 { font-size: clamp(1.1rem, 2.8vw, 1.5rem); font-weight: 700; text-align: center; margin-bottom: 32px; color: #fff; }
+  .faq-list { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; }
+  .faq-item { border-radius: 6px; overflow: hidden; }
+  .faq-q {
+    width: 100%;
+    background: var(--green);
+    border: none;
+    color: #0a1a0f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.87rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 14px 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    transition: background 0.2s;
+  }
+  .faq-q:hover { background: #0de000; }
+  .faq-q.open { background: #0de000; border-radius: 6px 6px 0 0; }
+  .faq-q .arrow {
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    transition: transform 0.35s ease;
+    display: inline-block;
+  }
+  .faq-q.open .arrow { transform: rotate(180deg); }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    background: rgba(255,255,255,0.06);
+    color: #c8dcd0;
+    font-size: 0.86rem;
+    line-height: 1.75;
+    padding: 0 16px;
+    border-radius: 0 0 6px 6px;
+  }
+  .faq-a.open {
+    max-height: 400px;
+    padding: 14px 16px 18px;
+  }
+
+  /* FOOTER */
+  footer { background: var(--dark-green); padding: 40px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); }
+  .footer-logo { font-size: 1.2rem; font-weight: 800; color: var(--green); margin-bottom: 14px; }
+  footer p { color: #7a9a85; font-size: 0.74rem; max-width: 680px; margin: 0 auto 10px; line-height: 1.8; }
+  footer .support { color: #a0c0aa; font-size: 0.84rem; margin-top: 10px; }
+
+  @keyframes pulse { 0%,100%{box-shadow:0 4px 16px rgba(21,249,0,0.3)} 50%{box-shadow:0 4px 32px rgba(21,249,0,0.6);transform:translateY(-1px)} }
+
+  /* ── GLOBAL MOBILE FIXES ── */
+  @media(max-width:480px){
+    .hero { padding: 32px 16px 40px; }
+    .section-two-col { padding: 40px 16px; }
+    .section-como { padding: 40px 16px; }
+    .section-paraquem { padding: 40px 16px; }
+    .section-premium { padding: 40px 16px; }
+    .section-garantia { padding: 32px 16px; }
+    .section-depoimentos { padding: 40px 16px; }
+    .section-planos { padding: 16px 16px 48px; }
+    .section-faq { padding: 40px 16px; }
+    footer { padding: 32px 16px; }
+    .g1-body h3 { font-size: 0.95rem; }
+    .carousel-btn { width: 34px; height: 34px; font-size: 0.9rem; }
+    .plano-card { padding: 18px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  Planilha de Precificação — <a href="#planos">Clique aqui e garanta a sua agora</a> com 07 dias de garantia
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>A falta de uma precificação correta está fazendo você perder dinheiro todos os dias!</h1>
+  <p>Descubra o valor exato que você deve cobrar para <b>lucrar de verdade,</b> sem achismos e sem prejuízos. Com nossa planilha automática, você transforma incerteza em lucro.</p>
+  <img class="hero-mockup" src="mockup-novo-reduzido.webp" alt="Mockup Precificação Lucrativa em todos dispositivos">
+  <ul class="check-list">
+    <li>Pagamento único, SEM mensalidade</li>
+    <li>Preenchimento Fácil e intuitivo</li>
+    <li>Pode usar no celular e computador</li>
+    <li>Suporte no Whatsapp</li>
+    <li>E-book + Vídeo aulas passo a passo</li>
+    <li>07 dias de garantia</li>
+  </ul>
+  <p class="price-by">Por apenas</p>
+  <div class="price-hero">R$10</div>
+  <a href="#planos" class="btn-hero">QUERO LUCRAR MAIS!</a>
+  <div class="trust-badges">
+    <div class="trust-badge">😊 Satisfação Garantida</div>
+    <div class="trust-badge">🔒 Compra Segura</div>
+    <div class="trust-badge">🔐 Privacidade Protegida</div>
+  </div>
+</section>
+
+<!-- PROBLEMA + SOLUÇÃO -->
+<section class="section-two-col bg-dark">
+  <div class="two-col-inner">
+    <!-- Coluna esquerda: imagem g1 + mockup dispositivos -->
+    <div>
+      <!-- G1 news box -->
+      <div class="g1-box">
+        <div class="g1-header">
+          <span class="g1-logo">g1</span>
+          <span class="g1-economia">ECONOMIA</span>
+        </div>
+        <div class="g1-subheader">EDUCAÇÃO FINANCEIRA</div>
+        <div class="g1-body">
+          <h3>A Precificação errada pode ser motivo da falência de um negócio</h3>
+          <p>Definir preços sem considerar todos os custos — <b>como insumos, impostos e despesas fixas</b> — é um erro comum entre empreendedores e pode comprometer a saúde financeira da empresa.</p>
+          <p>Mesmo com aumento nas vendas, muitos acabam operando no prejuízo por não saberem o lucro real. Especialistas alertam que <b>incluir todos os custos</b> na formação do preço é essencial para garantir lucro e sustentabilidade.</p>
+        </div>
+      </div>
+      <img class="col-img" src="precificacao-errada-e1748053673688-1024x925.webp" alt="Precificação errada">
+    </div>
+    <!-- Coluna direita: textos -->
+    <div>
+      <h2>O Preço Errado Pode <span>Acabar com o Seu Negócio!</span></h2>
+      <p>Uma precificação incorreta é um dos maiores vilões dentro de um negócio. Cobrar menos do que deveria gera prejuízo, e cobrar muito caro afasta suas vendas. E o resultado? Fluxo de caixa quebrado, lucro inexistente e um negócio que nunca sai do lugar.</p>
+      <p>Por isso, é essencial incluir <b style="color:#fff">todos os custos — fixos, variáveis, taxas e impostos</b> — na formação do preço. Só assim você garante lucro de verdade, fluxo de caixa saudável e decisões que fazem sua empresa avançar.</p>
+      <h3>Sinais de que sua precificação está te prejudicando:</h3>
+      <ul class="x-list">
+        <li><span class="ic-red">✗</span> Você vende bastante, mas nunca vê o lucro.</li>
+        <li><span class="ic-red">✗</span> Copia o preço da concorrência sem fazer cálculos próprios</li>
+        <li><span class="ic-red">✗</span> Não sabe ao certo quanto cada produto te custa</li>
+        <li><span class="ic-red">✗</span> Sente que está trabalhando muito e lucrando pouco.</li>
+      </ul>
+
+      <br>
+      <img class="col-img" src="MOCKUP-TODOS-DISPOSITIVOS-1024x664.webp" alt="Mockup todos dispositivos" style="margin-bottom:20px;">
+
+      <h2>Precifique corretamente <span>e veja o seu lucro crescer.</span></h2>
+      <p>A precificação correta é fundamental para garantir a lucratividade e a sustentabilidade de um negócio. Ela assegura que todos os custos sejam cobertos, que a empresa obtenha um lucro e que o preço seja atrativo para os consumidores.</p>
+      <h3>Veja as vantagens de uma planilha de precificação automática:</h3>
+      <ul class="x-list">
+        <li><span class="ic-grn">✔</span><span><b style="color:#fff">Preço certo em segundos:</b> todos os custos e margem de lucro calculados automaticamente.</span></li>
+        <li><span class="ic-grn">✔</span><span><b style="color:#fff">Chega de trabalhar no prejuízo:</b> saiba exatamente quanto precisa cobrar para lucrar.</span></li>
+        <li><span class="ic-grn">✔</span><span><b style="color:#fff">Controle total sobre seus produtos:</b> entenda quais vendem bem e quais estão te dando prejuízo.</span></li>
+        <li><span class="ic-grn">✔</span><span><b style="color:#fff">Todos os custos na conta — do aluguel à embalagem:</b> inclua despesas fixas, variáveis, taxas e impostos para garantir lucro real.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="section-como">
+  <h2>Como Funciona a Planilha de Precificação:</h2>
+  <p class="sub">Essa planilha inteligente <b>organiza todas informações importantes</b> do seu negócio em um único lugar e <b>faz todas as contas difíceis</b> para você em segundos.</p>
+  <div class="features-list">
+
+    <div class="feature-row">
+      <img class="feature-img" src="planilha.webp" alt="Dashboard Gerencial">
+      <div>
+        <h3>Dashboard Gerencial</h3>
+        <p>Com ele, você tem acesso imediato às principais métricas da sua precificação, reunidas de forma visual em um dashboard incrível e super intuitivo.</p>
+        <ul class="green-list">
+          <li>Quantidade total de produtos</li>
+          <li>Preço de venda de cada item</li>
+          <li>Total de Despesas fixas</li>
+          <li>Análise detalhada por produto</li>
+          <li>Margem de contribuição</li>
+          <li>Top 5 produtos mais lucrativos</li>
+          <li>Top 5 produtos com maior custo operacional</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <img class="feature-img" src="custos-fixos.webp" alt="Cadastro de custos fixos e taxas">
+      <div>
+        <h3>Cadastro de custos fixos e taxas</h3>
+        <p>Você sabia que muitos negócios perdem dinheiro sem perceber por <b>esquecer de incluir taxas e custos fixos na precificação?</b> Com a planilha "precificação lucrativa", isso nunca mais será um problema!</p>
+        <ul class="green-list">
+          <li>Taxas de Ifood, marketplaces e apps de delivery e impostos</li>
+          <li>Despesas fixas como aluguel, internet, energia, salários</li>
+          <li>Tudo isso calculado e embutido automaticamente no preço final do produto</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <img class="feature-img" src="insumos.webp" alt="Cadastro de insumos">
+      <div>
+        <h3>Cadastro de insumos</h3>
+        <p>Chega de adivinhações! Cadastre todos os seus insumos, tendo o controle total sobre cada item utilizado na sua produção: Pão, bacon, queijo, salada, carne, molhos e muito mais.</p>
+        <p>Com esse controle em mãos, você sabe exatamente <b>quanto custa produzir cada item do seu cardápio</b> e pode ajustar seus preços com segurança, evitando prejuízos e otimizando sua margem de lucro.</p>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <img class="feature-img" src="precificacao-fixas-tecnicas.webp" alt="Precificação fichas técnicas">
+      <div>
+        <h3>Precificação fixas técnicas — fabricação própria</h3>
+        <p>Nessa tela você precifica seus produtos de fabricação própria como bolos, hambúrgueres, pizza, salgados, etc. Insira todos seus insumos, taxas, impostos e custos fixos.</p>
+        <p>Podendo ainda fazer uma comparação com seu preço atual de venda para saber se pode manter ou deve ajustar o preço atual.</p>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <img class="feature-img" src="precificacao-revenda-1.webp" alt="Precificação produtos de revenda">
+      <div>
+        <h3>Precificação produtos de revenda</h3>
+        <p>Nesta tela você precifica <b>produtos de revenda</b> como roupas, relógios, perfumes, etc. Ou seja, produtos que você compra para revender.</p>
+        <p>Você só precisa inserir o valor de compra, seus custos fixos, taxas e impostos são incluídos automaticamente, estipular o lucro desejado e você terá o preço de revenda sugerido.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PARA QUEM -->
+<section class="section-paraquem bg-dark">
+  <div class="inner">
+    <h2>Pra quem é a Planilha de Precificação Lucrativa:</h2>
+    <div class="paraquem-box">
+      <div class="paraquem-section"><h4>🍰 Gastronomia &amp; Alimentação</h4><p>Confeitaria, Hamburguerias, Pizzarias, Bolos por encomenda, Lanchonetes, Marmitarias, Padarias, açaiterias, sorveterias, doces e salgados.</p></div>
+      <div class="paraquem-section"><h4>👗 Moda &amp; Costura</h4><p>Costura, Moda, Roupas sob medida, Lojas de roupas, Brechós, Outlets, Lojas de calçados.</p></div>
+      <div class="paraquem-section"><h4>🎁 Artesanato &amp; Personalizados</h4><p>Artesanato, Produtos personalizados, Brindes personalizados, Papelarias, Gráficas, Impressões sob demanda.</p></div>
+      <div class="paraquem-section"><h4>🛠️ Móveis &amp; Produção Manual</h4><p>Marcenaria, Móveis sob medida, Produção caseira, Indústria semi-industrial.</p></div>
+      <div class="paraquem-section"><h4>🧼 Beleza &amp; Bem-estar</h4><p>Sabonetes artesanais, Cosméticos naturais, Perfumaria, Cosméticos, Maquiagens.</p></div>
+      <div class="paraquem-section"><h4>💍 Acessórios &amp; Variedades</h4><p>Acessórios, Bijuterias, Lojas de presentes, Lojas de variedades.</p></div>
+      <div class="paraquem-section"><h4>📱 Tecnologia &amp; Eletrônicos</h4><p>Lojas de eletrônicos, Lojas de celulares, revenda de acessórios.</p></div>
+      <div class="paraquem-section"><h4>🌎 Importação &amp; Revenda Online</h4><p>Importados, Dropshipping, E-commerce, Vendedores de marketplace (Shopee, Mercado Livre, etc.)</p></div>
+      <div class="paraquem-section"><h4>🧑‍💼 Empreendedores e Pequenos Negócios</h4><p>Microempreendedores (MEIs), Lojas físicas, Lojas virtuais, Empreendedores iniciantes.</p></div>
+      <div class="paraquem-note"><em>A planilha <b>Precificação Lucrativa</b> serve para qualquer negócio, para precificar corretamente tanto produtos de <b>revenda</b> quanto produtos de <b>fabricação Própria.</b></em></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREMIUM -->
+<section class="section-premium bg-darker">
+  <h2>Receba <span>+07 FERRAMENTAS EXCLUSIVAS</span><br>adquirindo o <u>Plano Premium!</u></h2>
+  <div class="premium-cards-grid">
+
+    <div class="premium-card">
+      <img src="orcamentos.webp" alt="Planilha de Orçamentos">
+      <div class="premium-card-body">
+        <div class="badge-pill badge-prem">Incluso no Plano Premium</div>
+        <h3>Planilha de Orçamentos</h3>
+        <ul>
+          <li>Insira os dados do cliente diretamente na planilha</li>
+          <li>Gere orçamentos automáticos e organizados, prontos para envio</li>
+          <li>Adicione a logo da sua empresa</li>
+          <li>Modelo prático e totalmente editável</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="premium-card">
+      <img src="controle-de-estoque-1-1024x664.webp" alt="Planilha de controle de Estoque">
+      <div class="premium-card-body">
+        <div class="badge-pill badge-prem">Incluso no Plano Premium</div>
+        <h3>Planilha de controle de Estoque</h3>
+        <ul>
+          <li>Cadastro de produtos, fornecedores e funcionários</li>
+          <li>Registro de Entrada e Saída</li>
+          <li>Centro de distribuição</li>
+          <li>Análise Geral e por produto</li>
+          <li>Inventário Geral, Dashboards e Relatórios</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="premium-card">
+      <img src="planilha-de-vendas-1024x664.webp" alt="Planilha de vendas e clientes">
+      <div class="premium-card-body">
+        <div class="badge-pill badge-prem">Incluso no Plano Premium</div>
+        <h3>Planilha de vendas e controle de clientes</h3>
+        <ul>
+          <li>Cadastre todos os clientes com nome, contato e informações</li>
+          <li>Registre cada venda realizada</li>
+          <li>Acompanhe o histórico de compras</li>
+          <li>Visão clara do volume de vendas e faturamento</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="premium-card">
+      <img src="Sem-Titulo-1-1-1024x1024.webp" alt="Guia Finanças do Negócio">
+      <div class="premium-card-body">
+        <div class="badge-pill badge-prem">Incluso no Plano Premium</div>
+        <h3>Guia: Como analisar as Finanças do seu negócio</h3>
+        <ul>
+          <li>O que é lucro? O que são tributos?</li>
+          <li>Organização Jurídica da empresa</li>
+          <li>Simples Nacional, Lucro Presumido e Real</li>
+          <li>Fluxo de Caixa e Demonstrativo de Resultado</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="premium-card">
+      <img src="estrategias-1024x1024.webp" alt="E-book 10 Estratégias de Vendas">
+      <div class="premium-card-body">
+        <div class="badge-pill badge-prem">Incluso no Plano Premium</div>
+        <h3>E-book: 10 Estratégias para aumentar as suas vendas</h3>
+      </div>
+    </div>
+
+    <div class="premium-card">
+      <img src="SUPORTE-1024x1024.webp" alt="Suporte no WhatsApp">
+      <div class="premium-card-body">
+        <div class="badge-pill badge-bon">BÔNUS</div>
+        <h3>Suporte exclusivo no Whatsapp</h3>
+        <p class="strike">R$19,90</p>
+        <p class="free">▶ Hoje de graça, ao selecionar o PLANO PREMIUM</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="section-garantia bg-dark">
+  <div class="garantia-inner">
+    <img class="garantia-seal" src="selo-garantia-7-dias-small-1.webp" alt="Selo Garantia 7 dias Risco Zero">
+    <div>
+      <h2>RISCO ZERO! 07 DIAS DE GARANTIA</h2>
+      <p><b>Se por qualquer motivo você não ficar satisfeito</b> com nossos produtos ou então não se adaptar, basta <b>entrar em contato com a nossa equipe</b> dentro do prazo de 07 dias e solicitar o reembolso do valor investido.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section-depoimentos">
+  <h2>Depoimentos de quem já comprou</h2>
+  <p class="sub"><u>Mais de <b>10.000 Empresários</b> utilizam nossas planilhas</u></p>
+  <div class="carousel-container">
+    <button class="carousel-btn prev" onclick="moveCarousel(-1)" aria-label="Anterior">&#8592;</button>
+    <div class="carousel-track-wrapper">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide"><img src="d6.webp" alt="Depoimento"></div>
+        <div class="carousel-slide"><img src="d2.webp" alt="Depoimento"></div>
+        <div class="carousel-slide"><img src="d3.webp" alt="Depoimento"></div>
+        <div class="carousel-slide"><img src="d4.webp" alt="Depoimento"></div>
+        <div class="carousel-slide"><img src="d7.webp" alt="Depoimento"></div>
+        <div class="carousel-slide"><img src="d1.webp" alt="Depoimento"></div>
+      </div>
+    </div>
+    <button class="carousel-btn next" onclick="moveCarousel(1)" aria-label="Próximo">&#8594;</button>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+
+  <!-- PLANOS -->
+  <div id="planos">
+    <h2>PRECIFIQUE CORRETAMENTE E VEJA SEU LUCRO CRESCER</h2>
+    <p class="sub-planos">Escolha a melhor oferta pra você:</p>
+    <div class="planos-wrapper">
+
+      <!-- BÁSICO -->
+      <div class="plano-card">
+        <span class="plano-title-tag">PLANO BÁSICO</span>
+        <ul class="plano-features">
+          <li><span class="pf-ok">✔</span> Acesso a planilha "Precificação lucrativa"</li>
+          <li><span class="pf-ok">✔</span> 07 dias de garantia</li>
+          <li><span class="pf-ok">✔</span> E-book + Vídeo aula passo a passo de como usar a planilha</li>
+          <li><span class="pf-no">✗</span> Planilha de Orçamento personalizada</li>
+          <li><span class="pf-no">✗</span> Planilha de controle de estoque</li>
+          <li><span class="pf-no">✗</span> Planilha de vendas e controle de clientes</li>
+          <li><span class="pf-no">✗</span> Planilha de agendamento de serviços</li>
+          <li><span class="pf-no">✗</span> Planilha lista de tarefas com checklist</li>
+          <li><span class="pf-no">✗</span> Guia: Como analisar as finanças do seu negócio</li>
+          <li><span class="pf-no">✗</span> <b>E-book:</b> 10 estratégias para aumentar as suas vendas</li>
+          <li><span class="pf-no">✗</span> <b>Bônus:</b> Suporte exclusivo no Whatsapp</li>
+        </ul>
+        <div class="plano-cta-block">
+          <div class="price-basic">R$10</div>
+          <div class="price-period">(Pagamento único)</div>
+          <button class="btn-plano btn-basic" ><a href="upgrade.html" style="text-decoration:none; color:inherit;">QUERO O PLANO BÁSICO!</a></button>
+          <p class="btn-note">Acesso imediato no e-mail</p>
+          <p style="font-size:0.77rem;color:#999;text-align:center;">Antes de comprar… Veja essa oferta MAIS VANTAJOSA para você!</p>
+        </div>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="plano-card premium">
+        <div class="stars-row">★★★★★</div>
+        <span class="plano-title-tag">PLANO PREMIUM</span>
+        <div class="most-sold">(MAIS VENDIDO)</div>
+        <img class="plano-img" src="MOCKUP-TODOS-DISPOSITIVOS-1024x664.webp" alt="Planilha Precificação Lucrativa">
+        <ul class="plano-features">
+          <li><span class="pf-ok">✔</span> Acesso a planilha completa "Precificação lucrativa"</li>
+          <li><span class="pf-ok">✔</span> Dashboard para análise</li>
+          <li><span class="pf-ok">✔</span> Precificação Fichas técnicas e revenda</li>
+          <li><span class="pf-ok">✔</span> Acesso vitalício</li>
+          <li><span class="pf-ok">✔</span> 07 dias de Garantia</li>
+        </ul>
+        <div class="extras-label">09 Ferramentas Exclusivas</div>
+        <ul class="plano-features">
+          <li><span class="pf-ok">✔</span> E-book + Vídeo aulas passo a passo de como usar a planilha</li>
+          <li><span class="pf-ok">✔</span> Planilha de Orçamento personalizada</li>
+          <li><span class="pf-ok">✔</span> Planilha de controle de estoque</li>
+          <li><span class="pf-ok">✔</span> Planilha de vendas e controle de clientes</li>
+          <li><span class="pf-ok">✔</span> Planilha de agendamento de serviços</li>
+          <li><span class="pf-ok">✔</span> Planilha lista de tarefas com checklist</li>
+          <li><span class="pf-ok">✔</span> Guia: Como analisar as finanças do seu negócio</li>
+          <li><span class="pf-ok">✔</span> Ebook: 10 estratégias para aumentar as suas vendas</li>
+          <li><span class="pf-ok">✔</span> <b>Bônus:</b> Suporte exclusivo no Whatsapp</li>
+        </ul>
+        <div class="plano-cta-block">
+          <div class="price-from">DE R$67,00</div>
+          <div class="price-for-label">POR APENAS</div>
+          <div class="price-main">R$27</div>
+          <div class="price-period">(Pagamento único)</div>
+          <button class="btn-plano btn-premium">QUERO O PLANO PREMIUM!</button>
+          <p class="btn-note">Acesso imediato no e-mail</p>
+          <div class="trust-row">
+            <div class="trust-item">😊 Satisfação Garantida</div>
+            <div class="trust-item">🔒 Compra Segura</div>
+            <div class="trust-item">🔐 Privacidade Protegida</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-faq bg-dark">
+  <h2>Perguntas Frequentes</h2>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">Essa Planilha Serve Para O Meu Tipo De Negócio? <span class="arrow">▼</span></button>
+      <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 16px;">Sim! Nossa planilha foi criada para atender tanto quem produz quanto quem revende produtos. Ela é ideal para confeitaria, bolos por encomenda, lanchonetes, marmitarias, costura, moda, artesanato, marcenaria, sabonetes artesanais, cosméticos, lojas de roupas, eletrônicos, dropshipping, e-commerce, vendedores de marketplace e muito mais.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">Quando Receberei Meu Acesso? <span class="arrow">▼</span></button>
+      <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 16px;">Assim que o pagamento for confirmado, você receberá um e-mail com o link para acessar a plataforma pela primeira vez e cadastrar sua senha. Basta criar uma senha e acessar a área de membros com todos os seus produtos.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">Por Quanto Tempo Terei Acesso? <span class="arrow">▼</span></button>
+      <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 16px;">Atualmente tem 2 planos disponíveis.<br><br><strong>Plano Básico</strong> com acesso de 12 meses.<br><strong>Plano Premium</strong> com acesso vitalício.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">A Planilha Tem Suporte? <span class="arrow">▼</span></button>
+      <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 16px;">Sim, após você acessar a área de membros encontrará um módulo com nossos canais de suporte.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">O Pagamento É Seguro? <span class="arrow">▼</span></button>
+      <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 16px;">Sim, é 100% seguro. Nós só trabalhamos com os melhores meios de pagamento online que existem atualmente na internet.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">Quais As Formas De Pagamentos? <span class="arrow">▼</span></button>
+      <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 16px;">Você pode pagar com <strong>cartão de crédito</strong> ou <strong>Pix</strong>.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="faqToggle(this)">Não sei nada sobre planilhas, vou conseguir usar? <span class="arrow">▼</span></button>
+      <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 16px;">A planilha foi desenvolvida para ter telas simples e extremamente fáceis de usar. Feita para quem não entende de Excel. Além disso, você receberá vídeo aulas passo a passo detalhando cada uma das funcionalidades das planilhas, e todo o suporte necessário.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">empresaorganizada.com</div>
+  <p>Todos os direitos reservados &copy; 2025 PLANILHAS PREMIUM. &Eacute; proibida a c&oacute;pia, distribui&ccedil;&atilde;o ou reprodu&ccedil;&atilde;o n&atilde;o autorizada das nossas planilhas e conte&uacute;dos, todas possuem registro junto ao CBL. O uso indevido est&aacute; sujeito a penalidades legais conforme a Lei de Direitos Autorais (Lei n&ordm; 9.610/98)</p>
+  <div class="support">Suporte: suporte@planilhaspremium.online</div>
+</footer>
+
+<script>
+// ── FAQ ──────────────────────────────────────────────────
+function faqToggle(btn) {
+  var answer = btn.nextElementSibling;
+  var isOpen = answer.getAttribute('data-open') === '1';
+
+  // fecha todos
+  document.querySelectorAll('.faq-a').forEach(function(a) {
+    a.style.maxHeight = '0px';
+    a.style.padding = '0 16px';
+    a.setAttribute('data-open', '0');
+  });
+  document.querySelectorAll('.faq-q').forEach(function(b) {
+    b.classList.remove('open');
+  });
+
+  // abre o clicado se estava fechado
+  if (!isOpen) {
+    answer.style.maxHeight = (answer.scrollHeight + 40) + 'px';
+    answer.style.padding = '14px 16px 18px';
+    answer.setAttribute('data-open', '1');
+    btn.classList.add('open');
+  }
+}
+
+// ── CAROUSEL ─────────────────────────────────────────────
+(function() {
+  var track = document.getElementById('carouselTrack');
+  var dotsContainer = document.getElementById('carouselDots');
+  if (!track) return;
+
+  var slides = track.querySelectorAll('.carousel-slide');
+  var total = slides.length;
+  var current = 0;
+  var visibleCount = 3;
+  var autoplayTimer;
+
+  function getVisible() {
+    if (window.innerWidth <= 480) return 1;
+    if (window.innerWidth <= 720) return 2;
+    return 3;
+  }
+
+  function maxIndex() {
+    return Math.max(0, total - visibleCount);
+  }
+
+  function buildDots() {
+    dotsContainer.innerHTML = '';
+    var count = maxIndex() + 1;
+    for (var i = 0; i < count; i++) {
+      (function(idx) {
+        var d = document.createElement('button');
+        d.className = 'carousel-dot' + (idx === current ? ' active' : '');
+        d.setAttribute('aria-label', 'Slide ' + (idx + 1));
+        d.addEventListener('click', function() { resetAutoplay(); goTo(idx); });
+        dotsContainer.appendChild(d);
+      })(i);
+    }
+  }
+
+  function updateDots() {
+    var dots = dotsContainer.querySelectorAll('.carousel-dot');
+    dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+  }
+
+  function goTo(index) {
+    visibleCount = getVisible();
+    var max = maxIndex();
+    current = Math.max(0, Math.min(index, max));
+    var pct = (100 / visibleCount) * current;
+    track.style.transform = 'translateX(-' + pct + '%)';
+    updateDots();
+  }
+
+  window.moveCarousel = function(dir) {
+    resetAutoplay();
+    goTo(current + dir);
+  };
+
+  function startAutoplay() {
+    autoplayTimer = setInterval(function() {
+      var next = current + 1 > maxIndex() ? 0 : current + 1;
+      goTo(next);
+    }, 5000);
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoplayTimer);
+    startAutoplay();
+  }
+
+  // Touch swipe
+  var touchStartX = 0;
+  track.addEventListener('touchstart', function(e) {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  track.addEventListener('touchend', function(e) {
+    var diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) { resetAutoplay(); goTo(current + (diff > 0 ? 1 : -1)); }
+  });
+
+  window.addEventListener('resize', function() {
+    visibleCount = getVisible();
+    slides.forEach(function(s) { s.style.minWidth = (100 / visibleCount) + '%'; });
+    buildDots();
+    goTo(Math.min(current, maxIndex()));
+  });
+
+  // Init
+  visibleCount = getVisible();
+  slides.forEach(function(s) { s.style.minWidth = (100 / visibleCount) + '%'; });
+  buildDots();
+  goTo(0);
+  startAutoplay();
+})();
+</script>
+</body>
+</html>
